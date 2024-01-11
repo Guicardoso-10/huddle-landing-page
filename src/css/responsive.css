@@ -1,0 +1,95 @@
+@media (max-width: 430px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: var(--ff-body) ;
+        font-size: var(--fs-body);
+        font-weight: var(--fw-body);
+        background-color: var(--clr-Violet);
+        background-image: url(../images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        text-align: center;
+        color: #eee;
+    }
+
+    .cabecalho {
+        max-width: 28.125rem;
+        padding: 2.5rem 2.5rem 1rem;
+        margin-inline: auto;
+    }
+
+    .info {
+        max-width: 28.125rem;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+
+    .logo {
+        width: 8rem;
+    }
+
+    h1 {
+        font-family: var(--ff-headings);
+        font-size: 1.375rem;
+        font-weight: var(--fw-heading);
+    }
+
+    .info p {
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        cursor: pointer;
+        border: none;
+        text-decoration: none;
+        background-color: #eee;
+        color: var(--clr-Violet);
+        padding: 0.7rem 5rem;
+        border-radius: 1.5rem;
+        transition: background-color 0.15s;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+        font-size: 0.813rem;
+    }
+
+    .btn:hover {
+        background-color: var(--Soft-pink);
+        color: #eee;
+    }
+
+    .social-media {
+        list-style: none;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        padding: 0 60px 0;
+    }
+
+    li {
+        display: inline-block;
+        margin-top: 0.5rem;
+    }
+
+    .info-container .info .social-media li {
+        font-size: 20px;
+    }
+    
+    .fa-facebook, .fa-twitter, .fa-instagram {
+        color: #eee;
+    }
+    
+    .fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover {
+        color: var(--Soft-pink);
+    }
+
+}

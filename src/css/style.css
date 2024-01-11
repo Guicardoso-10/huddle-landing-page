@@ -1,0 +1,121 @@
+body {
+    display: grid;
+    grid-template-areas: "header header"
+                         "imagem info"
+                         "footer footer";
+    grid-template-columns: 60% 40%;                     
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: var(--clr-Violet);
+    color: #eee;
+}
+
+header {
+    padding: 20px;
+    grid-area: header;
+    max-width: 1150px;
+}
+
+.logo {
+    width: 20%;
+}
+
+.secao-img {
+    grid-area: imagem;
+    padding: 30px 0 0 90px;
+}
+
+.info {
+    grid-area: info;
+    max-width: 470px;
+    text-align: left;
+    padding-top: 80px;
+    font-size: 19px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.info-container .info p {
+    margin: 30px 0 25px;
+}
+
+
+.info h1 {
+    font-size: 35px;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    background-color: #eee;
+    color: var(--clr-Violet);
+    padding: 0.7rem 5rem;
+    border-radius: 1.5rem;
+    transition: background-color 0.15s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+    font-size: 19px;
+}
+
+.btn:hover {
+    background-color: var(--Soft-pink);
+    color: #eee;
+}
+
+
+
+.social-media {
+    text-align: end;
+    margin-top: 3.6rem;
+}
+
+li {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.info-container .info .social-media {
+    margin-top: 130px;
+}
+
+.info-container .info .social-media li {
+    font-size: 28px;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+    color: #eee;
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover {
+    color: var(--Soft-pink);
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-areas: "header"
+                             "imagem"
+                             "info";
+        grid-template-columns: 100%;
+    }
+
+    .secao-img {
+        padding: 30px 0 0 30px; /* Ajuste conforme necessário */
+    }
+
+    .info {
+        max-width: none; /* Ou ajuste conforme necessário */
+        padding-top: 30px; /* Ou ajuste conforme necessário */
+    }
+
+    .info-container {
+        flex-direction: column; /* Empilhe os itens em telas menores */
+        align-items: center; /* Centralize os itens em telas menores */
+    }
+}
